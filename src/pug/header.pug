@@ -1,0 +1,63 @@
+include mixins.pug
+header 
+    .container 
+        a.logo(href="#")
+            img(src="../assets/images/Logo.png", alt="")
+            p.title стромизмеритель
+        .search 
+            input(type="search", placeholder="Поиск")
+            button
+                img(src="../assets/images/Search.png", alt="")
+        .language 
+            ul 
+                li 
+                    a РУ
+                li 
+                    a EN 
+                li 
+                    a FR
+        .contacts 
+            a.phone(href="tel:88005505970") 8 800 550 59 70 
+            a.mail(href="mailto:info@stromi-nn.ru") info@stromi-nn.ru
+    .nav 
+        .container
+            ul 
+                li 
+                    a заводы
+                li.separator |
+                li 
+                    a линии
+                li.separator |
+                li 
+                    a оборудование
+                li.separator |
+                li 
+                    a решения под ключ
+                li.separator |
+                li 
+                    a компания
+                li.separator |
+                li 
+                    a контакты
+    .content 
+        .container
+            .descr 
+                h1 проектирование и строительство составных цехов 
+                    span &#171под ключ&#187
+                p реализуем проекты с 1990 года в россии и за рубежом
+                .quality
+                    .iso
+                        img(src="../assets/images/iso-logo.png", alt="")
+                        p Международный стандарт 
+                            span качества
+                    .npo
+                        img(src="../assets/images/npo-logo.png", alt="")
+                        p Лицензия на выполнение 
+                            span комплекса проектных работ
+                .btns
+                    +Btn(true, "написать нам")
+                    +Btn(false, "о компании")
+            .video 
+                button.playVideo
+                    img(src="../assets/images/Videoicon.png", alt="")
+            

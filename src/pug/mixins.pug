@@ -16,3 +16,9 @@ mixin InputRadio(name, label)
 mixin BtnMenu()
     button.btn__menu
         span
+
+mixin Btn(bg, text)
+    if bg == true 
+        button.btn.btn_bg= text
+    else 
+        button.btn= text

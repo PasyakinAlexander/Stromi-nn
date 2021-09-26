@@ -3,6 +3,7 @@ body
     margin: 0;
     color: #000;
     background: #fff;
+    font-family: montserrat;
 }
 
 body.lock
@@ -30,6 +31,224 @@ button, input, select
 button, a
 {
     cursor: pointer;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 2px solid #32629A;
+    width: 100%;
+    background: none;
+    color: #32629A;
+}
+
+.btn_bg{
+    background: #32629A;
+    color: white;
+}
+
+header{
+    background-image: url(../images/BackgroundHeader.png);
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+
+        img{
+            width: 160px;
+        }
+    }
+
+    .title{
+        text-transform: uppercase;
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    .search{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        border: 2px solid rgba(50, 98, 154, 0.3);
+
+        input{
+            padding: 10px;
+            border: none;
+            width: 100%;
+            background: none;
+            padding-right: 0;
+
+            
+        }
+
+        input::-webkit-search-cancel-button{
+            display: none;
+        }
+
+        button{
+            border:none;
+            background: none;
+        }
+    }
+
+    .language{
+        ul{
+            padding: 0;
+            color: #32629A;
+            li{
+                display: inline;
+                font-size: 16px;
+                font-weight: normal;
+                border-right: 1px solid gray;
+                padding: 0px 5px;
+            }
+
+            li:last-child{
+                border: none;
+            }
+        }
+    }
+
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        .phone::before{
+            content: url(../images/Phone.png);
+            padding: 10px;
+            vertical-align: middle;
+        }
+
+        .phone{
+            font-size: 28px;
+        }
+
+        .mail{
+            margin-left: auto;
+            color: #32629A;
+        }
+    }
+
+    .nav{
+        ul{
+            display: flex;
+            justify-content:space-between;
+            width: 100%;
+            padding: 0;
+
+            li{
+                display: inline;
+                text-transform: uppercase;
+                font-size: 18px;
+            }
+
+            .separator{
+                color: #32629A;
+            }
+        }
+    }
+
+    .content{
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+
+        .descr{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+
+            p{
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+
+            .btns{
+                display: flex;
+                margin-top: 20px;
+                justify-content:space-between;
+
+                button{
+                    width: 40%;
+                }
+            }
+        }
+
+        .quality{
+            display: flex;
+            justify-content:space-around;
+
+            p{
+                display: inline-block;
+                text-transform: none;
+                font-size: 14px;
+                align-items: center;
+                padding-left: 20px;
+                margin: 0;
+            }
+
+            .iso{
+                display: flex;
+                font-weight: bold;
+                width: 30%;
+                align-items: center;
+
+                span{
+                    font-weight: normal;
+                }
+            }
+
+            .npo{
+                display: flex;
+                font-weight: normal;
+                width: 60%;
+                align-items: center;
+
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+
+        h1{
+            font-size: 32px;
+            font-style: italic;
+            text-transform: uppercase;
+            font-weight: normal;
+            color: #32629A;
+
+            span{
+                font-weight:bold;
+            }
+
+            margin-bottom: 0;
+        }
+
+        .video{
+            display: flex;
+            background: url(../images/HeaderVideoBackground.png) no-repeat;
+            background-size: 100% 70%;
+            background-position-y: center;
+            width: 850px;
+            height: 400px;
+
+            .playVideo{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+                background: none;
+                border: none;
+            }
+        }
+    }
 }
 
 
