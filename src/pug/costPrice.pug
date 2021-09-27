@@ -1,0 +1,18 @@
+include mixins.pug
+section.costPrice 
+    .container
+        +TitleSection("Снижение сибестоимости оборудования за счет полного цикла производства")
+        .info 
+            .el
+                h3.red более <span> 70 </span> единиц
+                h3.black станочный парк оборудования
+            .el
+                h3.red более <span> 4000 </span> м <sup>2</sup>
+                h3.black площадь административно-производственного цеха
+        .cards
+            +CardCostPrice("Заготовительный участок", "../assets/images/CostPrice1.png", ["Гильотины", "Лентопильные станки", "Оборудование и станок плазменной резки"])
+            +CardCostPrice("Механическая обработка", "../assets/images/CostPrice2.png", ["Пресса", "Оборудование гибки, вальцовки"])
+            +CardCostPrice("Токарно-фрезерный участок", "../assets/images/CostPrice3.png", [])
+            +CardCostPrice("Сборочные участки", "../assets/images/CostPrice4.png", ["Сварочно-сборочные посты", "Сварочно-сборочные участки"])
+            +CardCostPrice("окраска и подготовка поверхности", "../assets/images/CostPrice5.png", ["Пескоструйная камера", "Камера окраски", "Камера порошковой окраски"])
+            +CardCostPrice("Нанесение специальных покрытий", "../assets/images/CostPrice6.png", ["Castolin", "Полимерные и керамико-полимерные покрытия", "Наплавка износостойким порошком"])

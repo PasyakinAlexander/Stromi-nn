@@ -22,3 +22,33 @@ mixin Btn(bg, text)
         button.btn.btn_bg= text
     else 
         button.btn= text
+
+mixin CardComplexSolution(imgPath, title)
+    .complexSolutionCard
+        img(src= imgPath, alt="")
+        h3= title
+        button.learnMoreBtn Узнать подробнее 
+
+mixin CardTurmkeySolution(imgPath, text, btn)
+    if btn == true
+        .turnkeySolutionCardBtn
+            img(src= imgPath, alt="")
+            h3= text 
+            button
+    else 
+        .turnkeySolutionCard(style= `background: url(${imgPath}) no-repeat;`)
+            button= text 
+
+mixin TitleSection(text)
+    .titleSection
+        img(src="../assets/images/lineTitle.png", alt="")
+        h2.titleSection= text
+
+mixin CardCostPrice(title, imgPath, list)
+    .costPriceCard
+        h3= title
+        img(src= imgPath, alt="")
+        ul
+            each val in list
+                li
+                    span= val
