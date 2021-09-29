@@ -52,3 +52,25 @@ mixin CardCostPrice(title, imgPath, list)
             each val in list
                 li
                     span= val
+
+mixin ProjectsSlide(imgPath, title, location, date, list)
+    .projectsSlide
+        img(src= imgPath, alt="")
+        .descr
+            h3= title
+            .locationDate 
+                p.location= location
+                p.date= date
+            ul 
+                each val in list
+                    li
+                        span= val
+
+mixin NewsSlide(date, title, text, imgPath)
+    .newsSlide
+        .descr
+            p.date= date
+            h3= title
+            p.text= text
+        img(src= imgPath, alt="")
+

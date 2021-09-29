@@ -4,6 +4,34 @@ function Core()
 {
     SetTabSwitcher();
     SetModal();
+
+    var carousel_projects = $(".carouselProjects").owlCarousel(
+        {
+            items: 1,
+            loop: true,
+            dots: false,
+            autoplay: false,
+            smartSpeed: 1000
+        }
+    );
+
+    $(".carouselNews").owlCarousel(
+        {
+            items: 1,
+            loop: true,
+            dots: true,
+            autoplay: false,
+            smartSpeed: 1000,
+            nav: false
+        }
+    );
+
+    $('.next').click(function() {
+        carousel_projects.trigger('next.owl.carousel');
+    });
+    $('.prev').click(function() {
+        carousel_projects.trigger('prev.owl.carousel', [1000]);
+    });
 }
 
 function SetTabSwitcher()
