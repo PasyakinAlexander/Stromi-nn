@@ -1,5 +1,6 @@
 include mixins.pug
 header 
+    +BtnMenu()
     .container 
         a.logo(href="#")
             img(src="../assets/images/Logo.png", alt="")
@@ -21,6 +22,7 @@ header
             a.mail(href="mailto:info@stromi-nn.ru") info@stromi-nn.ru
     .nav 
         .container
+            button.btnCloseMenu
             ul 
                 li 
                     a заводы

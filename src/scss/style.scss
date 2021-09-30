@@ -41,11 +41,18 @@ button, a
     width: 100%;
     background: none;
     color: #32629A;
+    font-family: Montserrat;
 }
 
 .btn_bg{
     background: #32629A;
     color: white;
+    font-family: Montserrat;
+}
+
+section{
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 header{
@@ -58,6 +65,7 @@ header{
         display: flex;
         align-items: center;
         justify-content:space-between;
+        flex-wrap: wrap;
     }
 
     .logo{
@@ -156,6 +164,10 @@ header{
                 color: #32629A;
             }
         }
+
+        .btnCloseMenu{
+            display: none;
+        }
     }
 }
 
@@ -169,12 +181,14 @@ header{
     .container{
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .descr{
         display: flex;
         flex-direction: column;
         width: 60%;
+        flex-wrap: wrap;
 
         p{
             font-size: 18px;
@@ -185,7 +199,6 @@ header{
             display: flex;
             margin-top: 50px;
             justify-content:space-between;
-            width: 85%;
 
             button{
                 width: 40%;
@@ -197,7 +210,7 @@ header{
         display: flex;
         justify-content:space-between;
         margin-top: 50px;
-        width: 85%;
+        flex-wrap: wrap;
 
         p{
             display: inline-block;
@@ -266,9 +279,9 @@ header{
     content: "";
     position: absolute;
     background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
-    bottom: 25px;
+    bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 150px;
 }
 
 .titleSection{
@@ -323,8 +336,6 @@ header{
 }
 
 .complexSolution{
-    margin-top: 50px;
-
     p{
         font-size: 16px;
     }
@@ -338,8 +349,6 @@ header{
 }
 
 .turnkeySolution{
-    margin-top: 50px;
-    
     background: url(../images/TurnkeySolutionBackground.png);
     background-size: 100%;
 
@@ -408,10 +417,9 @@ header{
 }
 
 .costPrice{
-    margin-top: 50px;
-
     .info{
         display: flex;
+        flex-wrap: wrap;
 
         h3{
             font-size: 22px;
@@ -477,10 +485,9 @@ header{
 
 .projects
 {
-    margin-top: 100px;
-
     .content{
         display: flex;
+        flex-wrap: wrap;
     }
 
     .carousel{
@@ -490,6 +497,7 @@ header{
 
     .projectsSlide{
         display: flex;
+        flex-wrap: wrap;
         width: 100%;
 
         img{
@@ -560,13 +568,12 @@ header{
 
         .btn_bg{
             width: 75%;
+            text-align: center;
         }
     }
 }
 
 .news{
-    margin-top: 100px;
-
     .titleSection{
         display: inline-block;
     }
@@ -601,6 +608,7 @@ header{
     .newsSlide{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         .descr{
             display: flex;
@@ -651,12 +659,11 @@ header{
 }
 
 .exhibitions{
-    margin-top: 100px;
-
     .card{
         display: flex;
         margin-top: 50px;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        flex-wrap: wrap;
 
         img{
             width: 30%;
@@ -685,7 +692,8 @@ footer{
     width: 100%;
     color: white;
     padding: 50px 0 50px 0;
-    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
 
     .nav{
         width: 100%;
@@ -751,6 +759,7 @@ footer{
         justify-content: space-between;
         align-items: center;
         margin-top: 50px;
+        flex-wrap: wrap;
 
         img{
             width: 10%;

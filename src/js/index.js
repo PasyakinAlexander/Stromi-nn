@@ -5,6 +5,13 @@ function Core()
     SetTabSwitcher();
     SetModal();
 
+    InitOwlCarousel();
+    ShowMenu();
+    CloseMenu();
+}
+
+function InitOwlCarousel()
+{
     var carousel_projects = $(".carouselProjects").owlCarousel(
         {
             items: 1,
@@ -26,12 +33,31 @@ function Core()
         }
     );
 
-    $('.next').click(function() {
+    $('.projects .next').click(function() {
         carousel_projects.trigger('next.owl.carousel');
     });
-    $('.prev').click(function() {
+    $('.projects .prev').click(function() {
         carousel_projects.trigger('prev.owl.carousel', [1000]);
     });
+}
+
+function ShowMenu()
+{
+    $('.btn__menu').click(function(){
+        if ($("header .nav").hasClass('showMenu')){
+            $("header .nav").removeClass('showMenu');
+        }
+        else{
+            $("header .nav").addClass('showMenu');
+        }
+    })
+}
+
+function CloseMenu()
+{
+    $('.btnCloseMenu').click(function(){
+        $("header .nav").removeClass('showMenu');
+    })
 }
 
 function SetTabSwitcher()
