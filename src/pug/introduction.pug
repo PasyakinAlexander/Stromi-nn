@@ -1,0 +1,23 @@
+include mixins.pug
+section.introduction
+    .container
+        .descr 
+            h1 проектирование и строительство составных цехов 
+                span &#171под ключ&#187
+            p реализуем проекты с 1990 года в россии и за рубежом
+            .quality
+                .iso
+                    img(src="../assets/images/iso-logo.png", alt="")
+                    p Международный стандарт 
+                        span качества
+                .npo
+                    img(src="../assets/images/npo-logo.png", alt="")
+                    p Лицензия на выполнение 
+                        span комплекса проектных работ
+            .btns
+                +Btn(true, "написать нам")
+                +Btn(false, "о компании")
+        .video 
+            button.playVideo
+                img(src="../assets/images/Videoicon.png", alt="")
+            

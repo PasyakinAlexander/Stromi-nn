@@ -23,21 +23,21 @@ mixin Btn(bg, text)
     else 
         button.btn= text
 
-mixin CardComplexSolution(imgPath, title)
+mixin CardComplexSolution(imgPath, title, link)
     .complexSolutionCard
         img(src= imgPath, alt="")
         h3= title
-        button.learnMoreBtn Узнать подробнее 
+        a.learnMoreBtn(href= link) Узнать подробнее 
 
-mixin CardTurmkeySolution(imgPath, text, btn)
+mixin CardTurmkeySolution(imgPath, text, btn, link)
     if btn == true
         .turnkeySolutionCardBtn
             img(src= imgPath, alt="")
             h3= text 
-            button
+            a(href= link) 
     else 
         .turnkeySolutionCard(style= `background: url(${imgPath}) no-repeat; background-size: cover;`)
-            button= text 
+            a(href= link)= text 
 
 mixin TitleSection(text)
     .titleSection
@@ -74,3 +74,27 @@ mixin NewsSlide(date, title, text, imgPath)
             p.text= text
         img(src= imgPath, alt="")
 
+mixin InternalPagesTitle(imgPath, title)
+    .internalPagesTitle
+        img(src= imgPath, alt="")
+        h1= title
+
+mixin NumbersCard(title, descr)
+    .numbersCard
+        h3.title= title
+        p.descr= descr
+
+mixin TarGlassBlocksCard(text)
+    .tarGlassBlocksCard 
+        p= text
+
+mixin DAMLIcon(pathIcon, text)
+    .damlIcon
+        .icon
+            img(src= pathIcon, alt="")
+        p= text
+
+mixin DesigningCard(pathIcon, text)
+    .designingCard
+        img(src= pathIcon, alt="")
+        p= text

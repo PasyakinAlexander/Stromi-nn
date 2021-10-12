@@ -1,0 +1,99 @@
+include pug/mixins.pug
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        include pug/head.pug
+    body
+        headerInternal
+            +BtnMenu()
+            .container 
+                a.logo(href="index.html")
+                    img(src="../assets/images/Logo.png", alt="")
+                    p.title стромизмеритель
+                .nav 
+                    button.btnCloseMenu
+                    ul 
+                        li 
+                            a заводы
+                        li.separator |
+                        li 
+                            a линии
+                        li.separator |
+                        li 
+                            a оборудование
+                        li.separator |
+                        li 
+                            a решения под ключ
+                        li.separator |
+                        li 
+                            a(href="aboutTheCompany.html") компания
+                        li.separator |
+                        li 
+                            a контакты
+                .search 
+                    input(type="search", placeholder="Поиск")
+                    button
+                        img(src="../assets/images/Search.png", alt="")
+                .contacts 
+                    a.phone(href="tel:88005505970") 8 800 550 59 70 
+                    a.mail(href="mailto:info@stromi-nn.ru") info@stromi-nn.ru
+                .language 
+                    ul 
+                        li 
+                            a РУ
+                        li 
+                            a EN 
+                        li 
+                            a FR
+
+        +InternalPagesTitle("assets/images/DosingAndMixingLines.png", "дозировочно-смесительные линии")
+        section.solution 
+            .container
+                .title 
+                    h2 решение вопросов
+                    .btns
+                        +Btn(true, "скачать опросный лист")
+                        +Btn(true, "технические характеристики")
+                .descr 
+                    ul
+                        li Дозирования жидких и хорошо сыпучих материалов
+                        li Дозирования комкующихся компонентов стекольной шихты
+                        li Дозирования плохосыпучих и высокогигроскопичных связанных материалов
+                    ul 
+                        li Дозирования малых компонентов: красителей, ускорителей варки, обесцвечиватей
+                        li Автоматизированная подготовка премиксов
+        section.gallary
+            .container
+                .title 
+                    h2 фотогалерея
+                    .btns
+                        button.prev ❮
+                        button.next ❯
+                .content 
+                    .carousel 
+                        .owl-carousel.carouselGallary 
+                            .carousel-item 
+                                img(src="../assets/images/Gallary1.png", alt="")
+                            .carousel-item 
+                                img(src="../assets/images/Gallary2.png", alt="")
+                            .carousel-item 
+                                img(src="../assets/images/Gallary3.png", alt="")
+                            .carousel-item 
+                                img(src="../assets/images/Gallary4.png", alt="")
+        section.icons 
+            .container 
+                +DAMLIcon("../assets/images/SystemIcon.png", "Гибкая и функциональная система настройки работы дозаторов, рецептов и материалов, технологии дозировочной линии")
+                +DAMLIcon("../assets/images/CorrectIcon.png", "Возможность быстрой коррекции или изменения технологии, замены технологического оборудования")
+                +DAMLIcon("../assets/images/DosingIcon.png", "Непрерывное дозирование, поддержание заданного соотношения шихты/стеклобоя")
+                +DAMLIcon("../assets/images/QualityIcon.png", "Высокое качество и стабильность шихты, за счёт высокой точности дозированияи оптимального подбора технологического оборудования")
+                +DAMLIcon("../assets/images/DeclineIcon.png", "Снижение пыления и потерь материалов за счёт конструкции оборудования и системы аспирации")
+
+                    
+        include pug/footer.pug
+
+        include pug/scripts.pug

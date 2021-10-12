@@ -10,6 +10,47 @@
             width: 60%;
         }
     }
+
+    headerInternal{
+        .search{
+            width: 40%;
+        }
+
+        .nav{
+            width: 80%;
+        }
+    }
+
+    .internalPagesTitle{
+        padding-top: 250px;
+    }
+
+    .specialization{
+        padding-top: 100px;
+    }
+
+    .description{
+        .container{
+            .card{
+                flex-direction: column;
+                .text{
+                    width: 100%;
+                }
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            .card:nth-child(even){
+                flex-direction: column-reverse;
+            }
+        }
+    }
+
+    .designingCard{
+        width: 45%;
+    }
 }
 
 @media(max-width: 1024px)
@@ -17,6 +58,26 @@
     .container
     {
         max-width: 992px;
+    }
+
+    headerInternal{
+        .nav{
+            ul{
+                li{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .specialization{
+        h2{
+            font-size: 28px;
+        }
+    }
+
+    .solution{
+        margin-top: 0;
     }
 }
 
@@ -159,6 +220,105 @@
             }
         }
     }
+
+    .numbers{
+        .container{
+            .content{
+                flex-direction: column;
+            }
+        }
+    }
+
+    .numbersCard{
+        width: 100%;
+
+        border-bottom: 1px dashed #B4C2CF;
+        border-right: none;
+    }
+
+    .blocks{
+        .container{
+            .tarGlassBlocksCard {
+                width: 45%;
+            }
+        }
+    }
+
+    .factories{
+        .container{
+            .btns{
+                .btn{
+                    width: 30%;
+                }
+    
+                .btn:last-child{
+                    width: 40%;
+                }
+            }
+        }
+
+        .projectsSlide{
+            img{
+                width: 100%;
+            }
+
+            .descr{
+                width: 100%;
+                padding-top: 20px;
+                padding-left: 0;
+            }
+        }
+    }
+
+    .designing{
+        margin-top: 100px;
+        .container{
+            .descr{
+                flex-direction: column;
+
+                p{
+                    width: 100%;
+                }
+            }
+            .content{
+                flex-direction: column;
+
+                ul{
+                    width: 100%;
+                    border-right: none;
+                    border-bottom: 1px dashed #696969;
+                }
+            }
+        }
+    }
+
+    .internalPagesTitle{
+        h1{
+            font-size: 60px;
+        }
+    }
+
+    .solution{
+        margin-top: 35px;
+        .container{
+            .title{
+                flex-direction: column;
+                
+                .btns{
+                    width: 100%;
+                    margin-top: 35px;
+                }
+            }
+        }
+    }
+
+    .damlIcon{
+        width: 50%;
+    }
+
+    .damlIcon:nth-child(even){
+        border: none;
+    }
 }
 
 @media(max-width: 768px)
@@ -186,7 +346,7 @@
         .nav{
             position: absolute;
             top: 0;
-            left: -100vw;
+            left: -150vw;
             transition: left .5s linear;
             width: 40%;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
@@ -296,14 +456,6 @@
         .title{
             width: 100%;
         }
-
-        .owl-dots{
-            width: 10%;
-        }
-
-        .owl-dot{
-            margin: 5px;
-        }
     }
 
     footer{
@@ -314,6 +466,124 @@
                 }
             }
         }
+    }
+
+    headerInternal{
+        .nav{
+            position: absolute;
+            top: 0;
+            left: -150vw;
+            transition: left .5s linear;
+            width: 40%;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+            padding: 20px 20px 20px 40px;
+
+            ul{
+                flex-direction: column;
+
+                .separator{
+                    display: none;
+                }
+
+                li{
+                    padding: 10px 0;
+                    font-size: 18px;
+                }
+            }
+
+            .btnCloseMenu{
+                display: block;
+                position: absolute;
+                top: 15px;
+                right: 25px;
+                background: none;
+                border: none;
+            }
+
+            .btnCloseMenu:before, .btnCloseMenu:after {
+                position: absolute;
+                content: ' ';
+                height: 33px;
+                width: 2px;
+                background-color: #333;
+                }
+                .btnCloseMenu:before {
+                transform: rotate(45deg);
+                }
+                .btnCloseMenu:after {
+                transform: rotate(-45deg);
+            }
+        }
+
+        .showMenu{
+            left: 0;
+            background: #EEF7FD;
+        }
+    }
+
+    .specialization{
+        .container{
+            .descr{
+                flex-direction: column;
+
+                ul{
+                    width: 100%;
+                }
+
+                .text{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .factories{
+        .container{
+            .btns{
+                .btn{
+                    width: 40%;
+                }
+    
+                .btn:last-child{
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .designingCard{
+        width: 100%;
+    }
+
+    .internalPagesTitle{
+        h1{
+            font-size: 48px;
+        }
+    }
+
+    .solution{
+        .container{
+            .descr{
+                flex-direction: column;
+
+                ul{
+                    width: 100%;
+                    border-right: none;
+                    border-bottom: 1px dashed #696969;
+                }
+            }
+        }
+    }
+
+    .damlIcon{
+        width: 100%;
+        border: none;
+        border-bottom: 1px dashed #696969;
+    }
+
+    .damlIcon:nth-child(even){
+        border: none;
+        border-bottom: 1px dashed #696969;
     }
 }
 
@@ -330,7 +600,255 @@
 
     header{
         .nav{
-            width: 60%;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+        }
+    }
+
+    .introduction{
+        .descr{
+            h1{
+                font-size: 26px;
+            }
+
+            .quality{
+                flex-direction: column;
+
+                .iso{
+                    width: 100%;
+                }
+
+                .npo{
+                    width: 100%;
+                    margin-top: 20px;
+                    padding: 0;
+                }
+            }
+
+            .btns{
+                flex-direction: column;
+
+                .btn{
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    .projectsSlide{
+        .descr{
+            .locationDate{
+                flex-direction: column;
+            }
+        }
+    }
+
+    .projects{
+        .container{
+            .content{
+                .carousel{
+                    .btns{
+                        a{
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .news{
+        .container{
+            .title{
+                flex-direction: column;
+
+                .btn{
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    footer{
+        padding-top: 20px;
+
+        .container{
+            .nav{
+                ul{
+                    flex-direction: column;
+
+                    .separator{
+                        display: none;
+                    }
+
+                    li{
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            .descr{
+                flex-direction: column;
+
+                img{
+                    width: 50%;
+                }
+
+                .copyright{
+                    margin-top: 20px;
+                }
+
+                .links{
+                    margin-top: 20px;
+                }
+
+                .contacts{
+                    flex-direction: column;
+
+                    text-align: center;
+
+                    .phone{
+                        margin-left: 0;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    headerInternal{
+        .nav{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+        }
+
+        .search{
+            width: 100%;
+        }
+
+        .contacts{
+            .phone{
+                font-size: 16px;
+            }
+        }
+    }
+
+    .specialization{
+        .container{
+            h2{
+                font-size: 20px;
+                width: 100%;
+                padding: 0;
+                padding-bottom: 20px;
+            }
+
+            .descr{
+                ul{
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .internalPagesTitle{
+        padding-top: 300px;
+
+        h1{
+            font-size: 24px;
+        }
+    }
+
+    .description{
+        .container{
+            .card{
+                .text{
+                    .title{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .blocks{
+        .container{
+            .tarGlassBlocksCard {
+                width: 100%;
+            }
+        }
+    }
+
+    .factories{
+        .container{
+            .btns{
+                flex-direction: column;
+
+                .btn{
+                    width: 100%;
+                }
+    
+                .btn:last-child{
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .designing{
+        margin-top: 0;
+
+        .container{
+            .content{
+                ul{
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .designingCard{
+        height: 250px;
+    }
+
+    .solution{
+        .container{
+            .title{
+                .btns{
+                    flex-direction: column;
+
+                    .btn{
+                        width: 100%;
+                    }
+
+                    .btn:last-child{
+                        width: 100%;
+                        margin: 0;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .gallary{
+        .container{
+            .title{
+                flex-direction: column;
+            }
+
+            .content{
+                .carousel{
+                    .owl-carousel.carouselGallary {
+                        .carousel-item{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
         }
     }
 }

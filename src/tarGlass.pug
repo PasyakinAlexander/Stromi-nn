@@ -1,0 +1,87 @@
+include pug/mixins.pug
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        include pug/head.pug
+    body
+        headerInternal
+            +BtnMenu()
+            .container 
+                a.logo(href="index.html")
+                    img(src="../assets/images/Logo.png", alt="")
+                    p.title стромизмеритель
+                .nav 
+                    button.btnCloseMenu
+                    ul 
+                        li 
+                            a заводы
+                        li.separator |
+                        li 
+                            a линии
+                        li.separator |
+                        li 
+                            a оборудование
+                        li.separator |
+                        li 
+                            a решения под ключ
+                        li.separator |
+                        li 
+                            a(href="aboutTheCompany.html") компания
+                        li.separator |
+                        li 
+                            a контакты
+                .search 
+                    input(type="search", placeholder="Поиск")
+                    button
+                        img(src="../assets/images/Search.png", alt="")
+                .contacts 
+                    a.phone(href="tel:88005505970") 8 800 550 59 70 
+                    a.mail(href="mailto:info@stromi-nn.ru") info@stromi-nn.ru
+                .language 
+                    ul 
+                        li 
+                            a РУ
+                        li 
+                            a EN 
+                        li 
+                            a FR
+
+        +InternalPagesTitle("assets/images/TarGlassTitle.png", "тарное стекло")
+        section.blocks 
+            .container
+                +TarGlassBlocksCard("Разработка проектной документации (стадии П, РП)")
+                +TarGlassBlocksCard("Реконструкция и модернизация стеклотарного производства")
+                +TarGlassBlocksCard("Производство оборудования составного цеха, линий обогащения и обработки сырьевых материалов")
+                +TarGlassBlocksCard("Производство оборудования линий возвратного и привозного стеклобоя, грануляция стекломассы")
+                +TarGlassBlocksCard("Система автоматического управления технологическим процессом")
+        section.description 
+            .container 
+                p Значительный объём работ, выполняемых в ООО «Стромизмеритель» по проектированию и реконструкции составных цехов, а также по производству оборудования для обработки сырьевых материалов и приготовления стекольной шихты, связан со стеклотарной промышленностью. В зависимости от вида выпускаемой стеклянной тары проектируемые цеха имеют производительность от 20 до 1000 тонн шихты в сутки и могут включать в себя отделения по обогащению некондиционного сырья и линии по переработке стеклобоя, в которых используются все виды сепарации, включая оптическое разделение стекла по цвету. Изготавливаемое в компании «Стромизмеритель» оборудование может использоваться и в линиях с окрашиванием стекломассы в каналах питателей.
+        section.factories
+            .container
+                h2.titleSection заводы тарного стекла
+                .cards
+                    +ProjectsSlide("../assets/images/Projects1.png", "Компания «Syrdaryo Universal Oyna»", "г. Сырдарья, Узбекистан", "2013-2020", 
+                            ["Проект составного цеха и отделения обработки сырьевых материалов (2 очереди)",
+                            "Оборудование линий обработки песка и доломита",
+                            "Дозировочно-смесительные линии",
+                            "Технологическое оборудование",
+                            "Транспортные системы",
+                            "Система управления оборудованием составного цеха"])
+                    +ProjectsSlide("../assets/images/Projects2.png", "ОАО «Гродненский стеклотарный завод»", "г. Гродно, Беларусь", "2020-2021", 
+                            ["Проект составного цеха",
+                            "Дозировочно-смесительные линии",
+                            "Отделение обработки сырьевых материалов",
+                            "Линия обработки привозного и возвратного стеклобоя"])
+                .btns 
+                    +Btn(true, "показать еще ˅")
+                    +Btn(true, "скачать референс-лист")
+                    
+        include pug/footer.pug
+
+        include pug/scripts.pug

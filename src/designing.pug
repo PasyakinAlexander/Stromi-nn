@@ -1,0 +1,86 @@
+include pug/mixins.pug
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        include pug/head.pug
+    body
+        headerInternal
+            +BtnMenu()
+            .container 
+                a.logo(href="index.html")
+                    img(src="../assets/images/Logo.png", alt="")
+                    p.title стромизмеритель
+                .nav 
+                    button.btnCloseMenu
+                    ul 
+                        li 
+                            a заводы
+                        li.separator |
+                        li 
+                            a линии
+                        li.separator |
+                        li 
+                            a оборудование
+                        li.separator |
+                        li 
+                            a решения под ключ
+                        li.separator |
+                        li 
+                            a(href="aboutTheCompany.html") компания
+                        li.separator |
+                        li 
+                            a контакты
+                .search 
+                    input(type="search", placeholder="Поиск")
+                    button
+                        img(src="../assets/images/Search.png", alt="")
+                .contacts 
+                    a.phone(href="tel:88005505970") 8 800 550 59 70 
+                    a.mail(href="mailto:info@stromi-nn.ru") info@stromi-nn.ru
+                .language 
+                    ul 
+                        li 
+                            a РУ
+                        li 
+                            a EN 
+                        li 
+                            a FR
+
+        +InternalPagesTitle("assets/images/DesigningBackgroundTitle.png", "проектирование")
+        section.designing
+            .container
+                .descr
+                    p ООО «Стромизмеритель» выполняет полный комплекс проектных работ для стекольных производств, линий по производству сухих смесей, формованных огнеупоров, неформованных огнеупорных смесей, электродной продукции, линий обработки и рециклинга стеклобоя, линий обогащения песка, доломита и известняка.
+                    p Большой опыт технологического проектирования позволяет спроектировать процесс, начиная с приёма и обработки сырья, его хранения и транспортирования, дозирования и смешивания, транспортирования многокомпонентной смеси до выпуска готовой продукции с учётом эксплуатационных, инженерно-технических и экологических требований
+                h2 мы предлагаем
+                .content
+                    ul
+                        li Разработка технического задания на проектирование 
+                        li Общая пояснительная записка
+                        li  Генеральный план и транспорт
+                        li  Технологические решения
+                        li  Архитектурно-планировочные решения
+                        li Строительно-конструктивные решения
+                        li Инженерное обеспечение, сети и системы
+                    ul 
+                        li Электрооборудование и автоматизация
+                        li Отопление, вентиляция и аспирация
+                        li Разработка предварительных проектных решений для оценки инвестиций
+                        li Сметная документация
+                        li Сопровождение прохождения государственной экспертизы и экспертизы промышленной безопасности
+        section.iconsDesigning 
+            .container
+                +DesigningCard("../assets/images/ModelingIcon.png", "Трёхмерное моделирование проектируемых объектов")
+                +DesigningCard("../assets/images/ProjectingIcon.png", "Опыт технологического проектирования производственных объектов более 25 лет")
+                +DesigningCard("../assets/images/AdaptationIcon.png", "Адаптация проектной документации компаний из Европы, США и Китая под российские нормы и нормы стран СНГ ")
+                +DesigningCard("../assets/images/ExperienceIcon.png", "Большой опыт проектов по реконструкции производств в стеснённых условиях строительного и технологического монтажа оборудования")
+                +DesigningCard("../assets/images/ExpertiseIcon.png", "Опыт прохождения государственных экспертиз и экспертиз по промышленной безопасности")
+                +DesigningCard("../assets/images/ReconstructionIcon.png", "Опыт реконструкции предприятий без остановки действующего производства")
+        include pug/footer.pug
+
+        include pug/scripts.pug
