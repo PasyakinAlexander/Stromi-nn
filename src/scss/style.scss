@@ -812,9 +812,9 @@ footer{
         display: flex;
         align-items: center;
         border: 1px solid #DBDBDB;
+        padding: 10px;
 
         input{
-            padding: 10px;
             border: none;
             width: 100%;
             background: none;
@@ -867,10 +867,9 @@ footer{
     .contacts{
         display: flex;
         flex-direction: column;
+
         .phone::before{
-            content: url(../images/Phone.png);
-            padding: 10px;
-            vertical-align: middle;
+            content: none;
         }
 
         .phone{
@@ -879,7 +878,7 @@ footer{
         }
 
         .mail{
-            margin-left: auto;
+            margin-left: 0;
             color: #575757;
             font-size: 15px;
         }
