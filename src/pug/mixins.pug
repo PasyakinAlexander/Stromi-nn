@@ -75,9 +75,9 @@ mixin NewsSlide(date, title, text, imgPath)
         img(src= imgPath, alt="")
 
 mixin InternalPagesTitle(imgPath, title)
-    .internalPagesTitle
-        img(src= imgPath, alt="")
-        h1= title
+    .internalPagesTitle(style= `background: url(${imgPath}) no-repeat; background-size: cover;`)
+        .container
+            h1= title
 
 mixin NumbersCard(title, descr)
     .numbersCard

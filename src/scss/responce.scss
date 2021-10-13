@@ -11,9 +11,14 @@
         }
     }
 
-    headerInternal{
+    .internal{
         .search{
-            width: 40%;
+            width: auto;
+            border: none;
+
+            input{
+                display: none;
+            }
         }
 
         .nav{
@@ -22,11 +27,7 @@
     }
 
     .internalPagesTitle{
-        padding-top: 250px;
-    }
-
-    .specialization{
-        padding-top: 100px;
+        margin-top: 250px;
     }
 
     .description{
@@ -35,6 +36,8 @@
                 flex-direction: column;
                 .text{
                     width: 100%;
+                    margin: 0;
+                    margin-top: 20px;
                 }
 
                 img{
@@ -44,6 +47,21 @@
 
             .card:nth-child(even){
                 flex-direction: column-reverse;
+
+                .text{
+                    margin: 0;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    .solution{
+        .container{
+            .title{
+                .btns{
+                    width: 70%;
+                }
             }
         }
     }
@@ -60,7 +78,7 @@
         max-width: 992px;
     }
 
-    headerInternal{
+    header.internal{
         .nav{
             ul{
                 li{
@@ -307,6 +325,7 @@
                 .btns{
                     width: 100%;
                     margin-top: 35px;
+                    justify-content: flex-start;
                 }
             }
         }
@@ -318,6 +337,10 @@
 
     .damlIcon:nth-child(even){
         border: none;
+    }
+
+    .damlIcon:nth-child(3){
+        border-right: 1px dashed #696969;
     }
 }
 
@@ -468,7 +491,7 @@
         }
     }
 
-    headerInternal{
+    .internal{
         .nav{
             position: absolute;
             top: 0;
@@ -563,6 +586,23 @@
 
     .solution{
         .container{
+            .title{
+                .btns{
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    .btn{
+                        width: 300px;
+                    }
+
+                    .btn:last-child{
+                        margin-left: 0;
+                        margin-top: 10px;
+                    }
+                }
+            }
+
             .descr{
                 flex-direction: column;
 
@@ -582,6 +622,11 @@
     }
 
     .damlIcon:nth-child(even){
+        border: none;
+        border-bottom: 1px dashed #696969;
+    }
+
+    .damlIcon:nth-child(3){
         border: none;
         border-bottom: 1px dashed #696969;
     }
@@ -719,7 +764,10 @@
         }
     }
 
-    headerInternal{
+    .internal{
+        .container{
+            padding: 5px;
+        }
         .nav{
             width: 100%;
             height: 100%;
@@ -727,7 +775,7 @@
         }
 
         .search{
-            width: 100%;
+            width: 40%;
         }
 
         .contacts{
@@ -755,8 +803,6 @@
     }
 
     .internalPagesTitle{
-        padding-top: 300px;
-
         h1{
             font-size: 24px;
         }
@@ -794,6 +840,7 @@
                 .btn:last-child{
                     width: 100%;
                     margin-top: 20px;
+                    margin-left: 0;
                 }
             }
         }
