@@ -40,10 +40,26 @@
                 content: none;
             }
         }
-    }
 
-    .internalPagesTitle{
-        margin-top: 250px;
+        .language{
+            display: flex;
+            align-items: center;
+            ul{
+                li{
+                    display: none;
+                    padding: 0;
+                }
+
+                li:nth-child(2){
+                    display: block;
+                    border: none;
+                }
+            }
+
+            .btnLanguage{
+                display: block;
+            }
+        }
     }
 
     .description{
@@ -173,6 +189,10 @@
                 li{
                     padding: 10px 0;
                     font-size: 18px;
+                }
+
+                .activePage::before{
+                    content: none;
                 }
             }
 
@@ -895,11 +915,6 @@
                 li{
                     display: none;
                     padding: 0;
-                }
-
-                li:first-child{
-                    display: block;
-                    border: none;
                 }
             }
 

@@ -860,7 +860,15 @@ footer{
             background: none;
             border: none;
             font-weight: bold;
-            font-size: 20px;
+            width: 10px;
+            height: 10px;
+            position: relative;
+        }
+
+        .btnLanguage::before{
+            content: url(../images/Vector1.png);
+            position: absolute;
+            top: -3px;
         }
     }
 
