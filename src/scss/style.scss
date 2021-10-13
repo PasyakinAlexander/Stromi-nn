@@ -796,13 +796,13 @@ footer{
         flex-direction: column;
 
         img{
-            width: 150px;
+            width: 140px;
         }
     }
 
     .title{
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 12px;
         font-style: italic;
     }
 
@@ -848,6 +848,14 @@ footer{
                 border: none;
             }
         }
+
+        .btnLanguage{
+            display: none;
+            background: none;
+            border: none;
+            font-weight: bold;
+            font-size: 20px;
+        }
     }
 
     .contacts{
@@ -860,13 +868,26 @@ footer{
         }
 
         .phone{
-            font-size: 20px;
+            font-size: 18px;
+            font-weight: 600;
         }
 
         .mail{
             margin-left: auto;
             color: #575757;
-            font-size: 16px;
+            font-size: 15px;
+        }
+
+        .btnContacts{
+            display: none;
+
+            background: none;
+            border: none;
+
+            img{
+                width: 20px;
+                height: 20px;
+            }
         }
     }
 
