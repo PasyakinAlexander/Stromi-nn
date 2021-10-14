@@ -25,7 +25,8 @@ mixin Btn(bg, text)
 
 mixin CardComplexSolution(imgPath, title, link)
     .complexSolutionCard
-        img(src= imgPath, alt="")
+        .image
+            img(src= imgPath, alt="")
         h3= title
         a.learnMoreBtn(href= link) Узнать подробнее 
 
@@ -34,10 +35,12 @@ mixin CardTurmkeySolution(imgPath, text, btn, link)
         .turnkeySolutionCardBtn
             img(src= imgPath, alt="")
             h3= text 
-            a(href= link) 
+            a(href= link)
+                span Узнать подробнее 
     else 
-        .turnkeySolutionCard(style= `background: url(${imgPath}) no-repeat; background-size: cover;`)
-            a(href= link)= text 
+        .turnkeySolutionCard(style= `background-image: url(${imgPath});`)
+            a.text(href= link)= text
+            a.learnMoreBtn(href= link) Узнать подробнее 
 
 mixin TitleSection(text)
     .titleSection
@@ -47,7 +50,8 @@ mixin TitleSection(text)
 mixin CardCostPrice(title, imgPath, list)
     .costPriceCard
         h3= title
-        img(src= imgPath, alt="")
+        .image
+            img(src= imgPath, alt="")
         ul
             each val in list
                 li
